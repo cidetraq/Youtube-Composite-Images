@@ -25,6 +25,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="combine.py" />
     <Compile Include="downloader.py" />
     <Compile Include="main.py">
       <SubType>Code</SubType>
