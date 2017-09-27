@@ -43,12 +43,11 @@ def resize(d,dimensions):
     files.sort()
     for index, file in enumerate(files):
         path = os.path.join(os.getcwd(), "source images", file)
-        print(file)
+        filename=int(file.split('.')[0])
+        print(filename)
         img = Image.open(path)
-        ratio=(d[index]/totalViews)
-        sqrootRatio=math.sqrt(ratio)
-        print(ratio) 
-        print(sqrootRatio)
+        ratio=(d[filename]/totalViews)
+        print(ratio)
         print(str(index))
         resizedX=int(0.9*math.ceil(math.sqrt((xDimension*yDimension*ratio))))
         resizedY=int(0.9*math.ceil(math.sqrt((xDimension*yDimension*ratio))))
@@ -58,7 +57,7 @@ def resize(d,dimensions):
             yDimension-=resizedY
             """
         resized=img.resize((resizedX, resizedY))
-        resized.save("resized images/"+str(index)+".jpg", 'JPEG')
+        resized.save("resized images/"+str(filename)+".jpg", 'JPEG')
     #image 100 in source images becomes image 3 in resized images, making image 3 become image 24
         
 
