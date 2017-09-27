@@ -25,13 +25,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="video_localizations.py" />
     <Compile Include="combine.py" />
-    <Compile Include="downloader.py" />
     <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
     <InterpreterReference Include="{c76a80e7-64d0-44cb-b56a-07e2ceb2a6ad}\3.5" />
   </ItemGroup>
   <PropertyGroup>

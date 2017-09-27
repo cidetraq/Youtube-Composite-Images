@@ -1,7 +1,11 @@
-from downloader import download
-from combine import combine
+import image_packer
+import combine
+import download
+import subprocess
+import os
 
-download()
-combine()
-
-"""subprocess.call(download())"""
+dimensions=(4000,4000)
+d=download.getInfo()
+image_packer.resize(d,dimensions)
+#image_packer.run(dimensions)
+#combine.equalSizedComposite()
