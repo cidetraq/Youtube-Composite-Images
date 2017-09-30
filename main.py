@@ -4,8 +4,8 @@ import download
 import subprocess
 import os
 
-dimensions=(4000,4000)
+dimensions=(1080,1080)
 d=download.getInfo()
 image_packer.resize(d,dimensions)
-#image_packer.run(dimensions)
+image_packer.run(dimensions)
 #combine.equalSizedComposite()
