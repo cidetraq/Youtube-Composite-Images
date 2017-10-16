@@ -10,7 +10,7 @@ import operator
 import os
 from apiclient.discovery import build
 
-DEVELOPER_KEY='AIzaSyBDNGWqlt2M6x8US0mNq42ydHc2E-LUOUc'
+DEVELOPER_KEY='INSERT YOUR DEVELOPER KEY HERE'
 
 youtube=build('youtube', 'v3', developerKey=DEVELOPER_KEY)
 
